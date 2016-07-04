@@ -22,3 +22,28 @@ Connection
 	 LCD6 - CS     P15 - GPIO3
 	 LCD7 - RST    P16 - GPIO4
 	 LCD8 - LED    P01 - 3.3V 
+
+
+User
+----------
+Download & Install WiringPi :
+		### For BPI-M1 / M1Plus
+		    git clone https://github.com/BPI-SINOVOIP/BPI-WiringPi.git -b BPI_M1_M1Plus
+		    
+		### For BPI-M2
+		    git clone https://github.com/BPI-SINOVOIP/BPI-WiringPi.git -b BPI_M2
+		    
+		### For BPI-M3
+		    git clone https://github.com/BPI-SINOVOIP/BPI-WiringPi.git -b BPI_M3    
+		    
+		## Installation
+		    cd BPI-WiringPi
+		    chmod +x ./build
+		    sudo ./build
+
+Download Code
+        git clone https://github.com/TyMaker/BPI_LCD5110
+
+        cd BPI_LCD5110/
+        cc -o cpushow pcd8544_rpi.c PCD8544.c  -L/usr/local/lib -lwiringPi
+        sudo ./cpushow
